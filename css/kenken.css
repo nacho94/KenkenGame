@@ -1,0 +1,117 @@
+
+/*header, main, footer {
+	border: 1px solid red;
+	margin: 5px;
+}*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: tahoma,verdana,sans-serif;
+}
+
+header {
+	text-align: center;
+	background: blue; 
+}	
+
+header h1 {
+	color: white;
+}
+
+aside#menu {
+	position: fixed;
+	float: left;
+	width: 150px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #888888;
+}
+
+aside#menu a {
+	color: white;
+	text-decoration: none;
+}
+
+aside#menu ul {
+	list-style-type: none;
+}
+
+aside#menu ul li {
+	margin: 4px 0;
+	padding: 2px 4px;
+}
+aside#menu a:hover {
+	background: Cornflowerblue;
+	border-radius: 3px;
+}
+
+main {
+	margin: 0 230px 0px 170px;
+}
+table#kenken-game {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+table#kenken-game td {
+	border: 1px solid silver;
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+
+table#kenken-game td span.number {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+table#kenken-game td span.ro {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	font-size: 0.8em;
+}
+
+table#chooseNumber {
+	position: absolute;
+	border: 1px solid silver;
+	border-collapse: collapse;
+	background-color: white;
+	z-index: 1000;
+}
+
+table#chooseNumber td {
+	border: 1px solid silver;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+table#chooseNumber tr {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	font-size: .8em;
+	margin: 10px 0;
+	padding: 10px;
+	color: silver;
+	width: 97.5%;
+	bottom: 0;
+	position: absolute;
+}
+
+footer a {
+	text-decoration: none;
+	color: gray;
+}	
+
+footer a:hover {
+	border-bottom: 1px dotted;
+}

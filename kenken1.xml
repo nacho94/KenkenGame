@@ -1,0 +1,92 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<kenken filas="6"
+xmlns="http://agora.unileon.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://agora.unileon.es kenkenSchema.xsd">
+
+  <fila numero="1">
+    <casilla numero="1" norte="true" este="true" sur="false" oeste="true">
+      <operacion>11+</operacion>
+    </casilla>
+    <casilla numero="2" norte="true" este="false" sur="true" oeste="true">
+      <operacion>2÷</operacion>
+    </casilla>
+    <casilla numero="3" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="4" norte="true" este="true" sur="false" oeste="true">
+      <operacion>20x</operacion>
+    </casilla>
+    <casilla numero="5" norte="true" este="false" sur="true" oeste="true">
+      <operacion>6x</operacion>
+    </casilla>
+    <casilla numero="6" norte="true" este="true" sur="false" oeste="false"/>
+  </fila>
+
+  <fila numero="2">
+    <casilla numero="1" norte="false" este="true" sur="true" oeste="true"/>
+    <casilla numero="2" norte="true" este="false" sur="true" oeste="true">
+      <operacion>3-</operacion>
+    </casilla>
+    <casilla numero="3" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="4" norte="false" este="true" sur="true" oeste="true"/>
+    <casilla numero="5" norte="true" este="true" sur="false" oeste="true">
+      <operacion>3÷</operacion>
+    </casilla>
+    <casilla numero="6" norte="false" este="true" sur="false" oeste="true"/>
+  </fila>
+
+    <fila numero="3">
+    <casilla numero="1" norte="true" este="false" sur="false" oeste="true">
+      <operacion>240x</operacion>
+    </casilla>
+    <casilla numero="2" norte="true" este="true" sur="false" oeste="false"/>
+    <casilla numero="3" norte="true" este="false" sur="true" oeste="true">
+      <operacion>6x</operacion>
+    </casilla>
+    <casilla numero="4" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="5" norte="false" este="true" sur="true" oeste="true"/>
+    <casilla numero="6" norte="false" este="true" sur="true" oeste="true"/>
+  </fila>
+
+  <fila numero="4">
+    <casilla numero="1" norte="false" este="false" sur="true" oeste="true"/>
+    <casilla numero="2" norte="false" este="true" sur="true" oeste="false"/>
+    <casilla numero="3" norte="true" este="true" sur="false" oeste="true">
+      <operacion>6x</operacion>
+    </casilla>
+    <casilla numero="4" norte="true" este="true" sur="false" oeste="true">
+      <operacion>7+</operacion>
+    </casilla>
+    <casilla numero="5" norte="true" este="false" sur="true" oeste="true">
+      <operacion>30x</operacion>
+    </casilla>
+    <casilla numero="6" norte="true" este="true" sur="true" oeste="false"/>
+  </fila>
+
+   <fila numero="5">
+    <casilla numero="1" norte="true" este="true" sur="true" oeste="true">
+      <operacion>6x</operacion>
+    </casilla>
+    <casilla numero="2" norte="true" este="false" sur="true" oeste="true"/>
+    <casilla numero="3" norte="false" este="true" sur="true" oeste="false"/>
+    <casilla numero="4" norte="false" este="false" sur="true" oeste="true"/>
+    <casilla numero="5" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="6" norte="true" este="true" sur="false" oeste="true">
+      <operacion>9÷</operacion>
+    </casilla>
+</fila>
+
+<fila numero="6">
+    <casilla numero="1" norte="true" este="false" sur="true" oeste="true">
+      <operacion>8+</operacion>
+    </casilla>
+    <casilla numero="2" norte="true" este="false" sur="true" oeste="false"/>
+    <casilla numero="3" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="4" norte="true" este="false" sur="true" oeste="true">
+      <operacion>2÷</operacion>
+    </casilla>
+    <casilla numero="5" norte="true" este="true" sur="true" oeste="false"/>
+    <casilla numero="6" norte="false" este="true" sur="true" oeste="true"/>
+</fila>
+
+</kenken>
