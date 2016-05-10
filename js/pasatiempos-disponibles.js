@@ -12,7 +12,7 @@ function createTable() {
 				var p = res[i].split(" ");
 				var c = $("<td>");
 				var a = $("<a>");
-				$(a).html(p[0]).attr("href", "http://192.168.56.102/cgi-bin/KenkenLoadGame.cgi?filename=" + p[0]);
+				$(a).html(p[0]).attr("href", "jugar.html?filename=" + p[0]);
 				$(c).append(a);
 				$(row).append(c);
 				c = $("<td>");

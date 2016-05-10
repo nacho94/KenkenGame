@@ -50,7 +50,7 @@ aside#menu a:hover {
 }
 
 main {
-	margin: 0 230px 0px 170px;
+	margin: 10px 230px 0px 170px;
 }
 table#kenken-game {
 	border-collapse: collapse;

@@ -1,6 +1,11 @@
 var selectedCell = null;
 var dimension = 0;
 
+$.urlParam = function(name){
+	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+	return results[1] || 0;
+}
+
 function createKenkenTable(width, heigh) {
 	var t = $("<table>").attr("id", "kenken-game");
 	for (var i = 0; i < heigh; i++) {
@@ -125,9 +130,9 @@ function getKenkenGameDimensions (dom) {
 	dimension = root.getAttribute("filas");
 }
 
-function onClickLoadGame(e) {
-	e.preventDefault();
-	$.get("http://192.168.56.102/cgi-bin/KenkenLoadGame.cgi", function(data) {
+function onClickLoadGame(filename) {
+	$.get("http://192.168.56.102/cgi-bin/KenkenLoadGame.cgi?filename=" + filename, function(data) {
+		$("#mensaje-cargar").remove();
 		var xmlparser = new DOMParser();
 		var dom = xmlparser.parseFromString(data,"text/xml");
 		$("#kenken-game").remove();
@@ -443,9 +448,14 @@ $(function() {
 	$("body").on("click",disableChooseNumberTable);
 	
 	
-	$("#cargarJuego").on("click", onClickLoadGame);
+	//$("#cargarJuego").on("click", onClickLoadGame);
 
 	$("#test").on("click",function() {
 		checkRowsAndColumns($("#kenken-game"));
 	});
+
+	var filename = $.urlParam("filename");
+	if(filename != null) {
+		onClickLoadGame(filename);
+	}
 });
