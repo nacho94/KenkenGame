@@ -10,11 +10,14 @@ function createTable() {
 			if(res[i] != "") {
 				var row = $("<tr>");
 				var p = res[i].split(" ");
-				for (var j = 0; j < 2; j++) {
-					var c = $("<td>");
-					$(c).append(p[j])
-					$(row).append(c);
-				};
+				var c = $("<td>");
+				var a = $("<a>");
+				$(a).html(p[0]).attr("href", "http://192.168.56.102/cgi-bin/KenkenLoadGame.cgi?filename=" + p[0]);
+				$(c).append(a);
+				$(row).append(c);
+				c = $("<td>");
+				$(c).html(p[1]);
+				$(row).append(c);
 				$(table).append(row);
 			}
 			
