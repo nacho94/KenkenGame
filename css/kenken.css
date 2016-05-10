@@ -64,6 +64,10 @@ table#kenken-game td {
 	position: relative;
 }
 
+table#kenken-game td.failed {
+	background-color: #ffdddd;
+}
+
 table#kenken-game td span.number {
 	position: absolute;
 	bottom: 0;
