@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>KenKen Game</title>
+	<link rel="stylesheet" type="text/css" href="css/kenken.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<h1>KenKen Game</h1>
+	</header>
+	<aside id="menu">
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="jugar.html">Jugar</a></li>
+				<li><a href="subir-pasatiempos.html">Subir Pasatiempos</a></li>
+				<li><a href="pasatiempos-disponibles.html">Pasamientos disponibles</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<h1>Subir pasatiempos</h1>
+		<form method="post" action="http://192.168.56.102/cgi-bin/KenkenSaveGame.cgi" enctype="multipart/form-data">
+			<input type="file" name="filename" />
+			<button type="submit">Subir archivo</button>
+		</form>
+	</main>
+	<footer>
+		07/04/2016 <a href="mailto:icresm00@estudiantes.unileon.es?subject=Practica%20de%20html%20y%20css"> Ignacio Crespo Martínez </a>
+	</footer>
+</body>
+</html>
