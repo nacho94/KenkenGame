@@ -22,6 +22,27 @@ header h1 {
 	color: white;
 }
 
+main h1, main h2 {
+	font-weight: normal;
+	border-bottom: 1px solid #888888;
+}
+
+main h1 {
+	margin: 5px 0;
+}
+
+main p {
+	text-align: center;
+	color: #666666;
+	line-height: 1.4em;
+}
+
+main form {
+	text-align: center;
+	color: #666666;
+	line-height: 1.4em;
+}
+
 aside#menu {
 	position: fixed;
 	float: left;
@@ -72,6 +93,7 @@ table#kenken-game td span.number {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	font-size: 1.5em;
 }
 
 table#kenken-game td span.ro {
