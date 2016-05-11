@@ -194,25 +194,6 @@ function kenkenWallsToString(norte, este, sur, oeste) {
 	return walls;
 }
 
-function resultKenkenCell(operation) {
-	var size = 0;
-	size = operation.length;
-	var result = "";
-	//console.log("size: " + size);
-	for(var i = 0; i<(size-1); i++) {
-		result += operation.charAt(i);
-	}
-	return result;
-}
-
-function operationKenkenCell(operation) {
-	var size = 0;
-	size = operation.length;
-	var result = "";
-	result = operation.charAt(size-1);
-	return result;
-}
-
 function checkDuplicatedNumbers(a) {
 	var numbers = [];
 	for(var i = 0; i < a.length; i++) {
@@ -291,7 +272,7 @@ function operateValues(cells, op) {
 				mul = mul * parseInt(r);
 			}
 			return mul;
-		case "?":
+		case "÷":
 			if($(cells[0]).find(".number").html() == "") {
 				return null;
 			} else {
@@ -419,6 +400,28 @@ function cleanCellsMark1(a, exclude) {
 	$(exclude).addClass("failed");
 }
 
+function resultKenkenCell(operation) {
+	var size = 0;
+	size = operation.length;
+	var result = "";
+	//console.log("size: " + size);
+	for(var i = 0; i<(size-1); i++) {
+		result += operation.charAt(i);
+	}
+	return result;
+}
+
+function operationKenkenCell(operation) {
+	var size = 0;
+	size = operation.length;
+	var result = "";
+	result = operation.charAt(size-1);
+	if(result == "?") {
+		result = "÷";
+	}
+	return result;
+}
+
 function xmlToKenkenData (table, dom) {
 	
 	var filas = dom.getElementsByTagName("fila");
@@ -447,13 +450,7 @@ function xmlToKenkenData (table, dom) {
 $(function() {
 	$("body").on("click",disableChooseNumberTable);
 	
-	
 	//$("#cargarJuego").on("click", onClickLoadGame);
-
-	$("#test").on("click",function() {
-		checkRowsAndColumns($("#kenken-game"));
-	});
-
 	var filename = $.urlParam("filename");
 	if(filename != null) {
 		onClickLoadGame(filename);
